@@ -39,6 +39,7 @@ a{
 }
 
 a:hover{
+	color: white;
 }
 
 .bg {
@@ -90,8 +91,8 @@ a:hover{
 
 .hiddentxt:hover ~ .bg {
 	background: black;
-	transition: .15s;
-	transition-delay: .1s;
+	/* transition: .15s;
+	transition-delay: .1s; */
 }
 
 @media(max-width: 800px){
