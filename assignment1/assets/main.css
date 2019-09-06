@@ -1,0 +1,117 @@
+
+/* this is a comment in css */
+/* base styles */
+
+html{
+	/* display: block; */
+	background: #FFFEFC;
+}
+
+@font-face {
+	font-family: h1;
+ 	src: url(happy-times-at-the-ikob-webfont.woff);
+}
+
+@font-face {
+	font-family: arialnarrow;
+ 	src: url(ArialNarrow.ttf);
+}
+
+h1{
+	font-size: 2rem;
+	font-family: h1;
+	line-height: 2.2rem;
+	font-weight: normal;
+}
+
+h2{
+	font-family: arialnarrow;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color:white;
+	font-weight: normal;
+	text-align: center;
+}
+
+a{
+	color: #7E3737;
+	text-decoration: none;
+}
+
+a:hover{
+}
+
+.bg {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .15s;
+	transition-delay: .1s;
+  pointer-events: none;
+}
+
+.header{
+	padding: 1rem;
+}
+
+.list{
+	padding: 1rem;
+}
+.hiddenimg {
+  display: none;
+	position: relative;
+	z-index: 10;
+	height: 30vh;
+	transform: translateY(-2.5rem);
+
+	/* background: black; */
+}
+
+.thumbnail{
+	position: relative;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+	padding: 1rem;
+	width: 30vw;
+}
+
+.hiddentxt{
+	width: 25%;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+  display: block;
+	transition: .15s;
+	transition-delay: .1s;
+}
+
+.hiddentxt:hover ~ .bg {
+	background: black;
+	transition: .15s;
+	transition-delay: .1s;
+}
+
+@media(max-width: 800px){
+
+	/* h1{
+		color: green;
+		width: 100%;
+	} */
+
+	.hiddenimg {
+	  display: none;
+		position: relative;
+		z-index: 10;
+		height: 30vh;
+		transform: translateY(-2.5rem);
+
+		/* background: black; */
+	}
+	.thumbnail{
+		width: 75vw;
+	}
+
+}
