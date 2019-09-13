@@ -49,8 +49,7 @@ a:hover{
   right: 0;
   bottom: 0;
   left: 0;
-  transition: .15s;
-	transition-delay: .1s;
+
   pointer-events: none;
 }
 
@@ -64,13 +63,12 @@ a:hover{
 }
 .hiddenimg {
   display: none;
-	position: relative;
 	z-index: 10;
 	height: 30vh;
-	transform: translateY(-2.5rem);
 	position: fixed;
-
-	/* background: black; */
+	left: 50%;
+	bottom:50%;
+	transform: translateX(-50%);
 }
 
 .thumbnail{
@@ -107,12 +105,14 @@ a:hover{
 	} */
 
 	.hiddenimg {
-	  display: none;
-		position: relative;
+		display: none;
 		z-index: 10;
 		height: 30vh;
-		transform: translateY(-2.5rem);
-
+		width: 30vw;
+		position: fixed;
+		left: 50%;
+		bottom:50%;
+		transform: translateX(-50%);
 		/* background: black; */
 	}
 	.thumbnail{
