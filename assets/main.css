@@ -60,6 +60,7 @@ a:hover{
 
 .list{
 	padding: 1rem;
+	/* z-index: 10; */
 }
 .hiddenimg {
   display: none;
@@ -67,6 +68,7 @@ a:hover{
 	z-index: 10;
 	height: 30vh;
 	transform: translateY(-2.5rem);
+	position: fixed;
 
 	/* background: black; */
 }
@@ -85,8 +87,10 @@ a:hover{
 
 .hiddentxt:hover ~ .hiddenimg {
   display: block;
-	transition: .15s;
-	transition-delay: .1s;
+	pointer-events: none;
+	/* transition: .15s; */
+	/* transition-delay: .1s; */
+
 }
 
 .hiddentxt:hover ~ .bg {
