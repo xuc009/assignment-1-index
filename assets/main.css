@@ -53,6 +53,8 @@ a:hover{
   pointer-events: none;
 }
 
+
+
 .header{
 	padding: 1rem;
 }
@@ -69,6 +71,16 @@ a:hover{
 	left: 50%;
 	bottom:50%;
 	transform: translateX(-50%);
+}
+
+.hiddenimg2 {
+  display: none;
+	position: relative;
+	z-index: 10;
+	height: 30vh;
+	transform: translateY(-2.5rem);
+
+	/* background: black; */
 }
 
 .thumbnail{
@@ -93,6 +105,18 @@ a:hover{
 
 .hiddentxt:hover ~ .bg {
 	background: black;
+	/* transition: .15s;
+	transition-delay: .1s; */
+}
+
+.hiddentxt2:hover ~ .hiddenimg2 {
+  display: block;
+	transition: .15s;
+	transition-delay: .1s;
+}
+
+.hiddentxt2:hover ~ .bg {
+	background: red;
 	/* transition: .15s;
 	transition-delay: .1s; */
 }
